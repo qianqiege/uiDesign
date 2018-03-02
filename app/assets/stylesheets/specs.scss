@@ -1,0 +1,60 @@
+
+.container {
+	margin: 30px 5px;
+}
+
+//颜色相关的样式
+ul.colors-li {
+	margin-top: 50px;
+	li {
+		margin: 15px 0;
+		span {
+			width: 30%;
+			display: inline-block;
+			text-align: center;
+			.color-div {
+				width: 40%;
+				height: 25px;
+				margin-left: 30%;
+			}
+		}		
+	} 
+	li.th-li {
+		font-size: 18px;
+		font-weight: 700;
+	}
+}
+
+a.link-a {
+	font-size: 13px;
+}
+
+//字体相关的样式
+.font-left {
+	text-indent: 40px;
+}
+
+a.btn {
+	display: inline-block;
+	text-align: center;
+}
+
+.desc-btn {
+	margin: 15px auto;
+	span {
+		font-weight: 700;
+	}
+}
+
+//Icon相关的样式
+.icon-li {
+	margin: 30px auto;
+	overflow: auto;
+	li {
+		float: left;
+		margin: auto 20px;
+		p {
+			margin: 8px auto;
+		}
+	}
+}

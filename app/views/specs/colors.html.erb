@@ -1,0 +1,19 @@
+<h1>Colors</h1>
+<ul class="colors-li">
+	<li class="th-li">
+		<span>颜色</span>
+		<span>rgb颜色值</span>
+		<span>说明</span>
+	</li>
+	
+	<% @colors.each do |color| %>
+		<li>
+			<span>
+				<div class="color-div" style="background-color: <%= color.rgb %>;"></div>
+			</span>
+			<span> <%= color.rgb %> </span>
+			<span> <%= color.desc %> </span>
+		</li>
+	<% end -%>
+</ul>
+<%= link_to "返回首页", root_path, { class: "link-a" } %>

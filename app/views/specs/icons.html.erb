@@ -1,0 +1,12 @@
+<h1>Icons</h1>
+
+<ul class="icon-li">
+	<% @icons.each do |icon| %>
+		<li> 
+			<img class="icon" src="/assets/return-a0e88422a45cfddab3b567c383fb6e20061c82ef6a8c9e03300ee370fdbbc474.png" alt="" style="width: <%= icon.width %>px; height: <%= icon.height %>px;" />
+			<p> <%= icon.width %> * <%= icon.height %> px </p>
+			<p> <%= icon.desc %> </p>		
+		</li>
+	<% end -%>
+</ul>
+<%= link_to "返回首页", root_path, { class: "link-a" } %>
