@@ -1,0 +1,13 @@
+<h1>Images</h1>
+
+<ul class="icon-li">
+	<% @images.each do |image| %>
+	<li>
+		<div style="width: <%= image.width %>; height: <%= image.height %>; background-color: #e1e1e1;"> </div>
+		<p> 描述：<%= image.desc %> </p>
+		<p>尺寸：<%= image.width %>*<%= image.height %></p>
+	</li>
+	<% end %>
+	
+</ul>
+<%= link_to "返回首页", root_path, { class: "link-a" } %>

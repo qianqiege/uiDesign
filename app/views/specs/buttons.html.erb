@@ -1,0 +1,37 @@
+<h1>Buttons</h1>
+
+<div class="container">
+	<ul>
+		<% @buttons.each do |button| %>
+			<li>
+				<a href="#" class="btn" style="
+				  width: <%= button.width %>; 
+				  height: <%= button.height %>; 
+				  background: <%= button.background %>; 
+				  color: <%= button.color %>; 
+				  border-radius: <%= button.border_radius %>; 
+				  font-size: <%= button.font_size %>; 
+				  line-height: <%= button.line_height %>;"
+				>
+					按钮
+				</a>
+				<p> 
+					width: <%= button.width %>; 
+					height: <%= button.height %>; 
+					background: <%= button.background %>; 
+					color: <%= button.color %>; 
+					border-radius: <%= button.border_radius %>; 
+					font-size: <%= button.font_size %>; 
+					line-height: <%= button.line_height %>; 
+				</p>
+				<p class="desc-btn">
+					<span>适用于：</span>
+					<%= button.desc %>
+				</p>
+
+			</li>
+		<% end -%>
+	</ul>
+</div>
+
+<%= link_to "返回首页", root_path, { class: "link-a" } %>

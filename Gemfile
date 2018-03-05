@@ -1,4 +1,6 @@
-source 'https://rubygems.org'
+# source 'https://rubygems.org'
+source 'https://gems.ruby-china.org'
+
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -32,6 +34,22 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+# https://github.com/rstgroup/active_skin
+# Flat skin for active admin.
+gem 'active_skin'
+
+# Flexible authentication solution for Rails with Warden
+# https://github.com/plataformatec/devise
+gem 'devise'
+
+# The administration framework for Ruby on Rails applications. http://activeadmin.info
+# https://github.com/activeadmin/activeadmin
+# Active Admin master has preliminary support for Rails 5. To give it a try, these Gemfile changes may be needed:
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+gem 'activeadmin', '~> 1.0.0.pre4'
+
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

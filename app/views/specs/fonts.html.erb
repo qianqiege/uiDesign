@@ -1,0 +1,26 @@
+<h1>Fonts</h1>
+<div>
+	<h3> 字体 </h3>
+	<p class="font-left"> 系统默认字体 </p>
+</div>
+<div>
+	<h3> 字号 </h3>
+	<ul class="colors-li">
+		<li class="th-li">
+			<span>样式</span>
+			<span>字号</span>
+			<span>使用场景</span>
+		</li>
+		
+		<% @fonts.each do |font| %>
+			<li>
+				<span>
+					<span style="font-size: <%= font.size %>" > 文字 </span>
+				</span>
+				<span> <%= font.size %> </span>
+				<span> <%= font.desc %> </span>
+			</li>
+		<% end -%>
+	</ul>
+</div>
+<%= link_to "返回首页", root_path, { class: "link-a" } %>
